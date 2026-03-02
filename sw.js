@@ -1,4 +1,4 @@
-const CACHE_NAME = 'budget-app-v2';
+const CACHE_NAME = 'budget-app-v3';
 const urlsToCache = [
   './',
   './index.html',
@@ -25,3 +25,4 @@ self.addEventListener('fetch', event => {
   );
 
 });
+
