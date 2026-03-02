@@ -1,21 +1,3 @@
-/* រចនាប័ទ្មសម្រាប់ប្រអប់ម៉ោង និងកាលបរិច្ឆេទ */
-.datetime-badge {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    margin-top: 8px;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    color: white;
-}
-.datetime-badge i {
-    margin-right: 5px;
-    color: #e0e7ff;
-}
-
 :root {
     --primary: #6366f1;
     --accent: #4f46e5;
@@ -31,7 +13,7 @@ body { font-family: 'Khmer OS Siemreap', sans-serif; margin: 0; background: var(
 .app-shell { max-width: 480px; margin: 0 auto; background: var(--bg); min-height: 100vh; padding-bottom: 100px; position: relative; }
 
 /* -------------------------------------------
-   បន្ថែមថ្មី៖ កូដសម្រាប់លាក់ និងបង្ហាញផ្ទាំង ទំព័រ
+   កូដសម្រាប់លាក់ និងបង្ហាញផ្ទាំង ទំព័រ
 ---------------------------------------------- */
 .page { 
     display: none; 
@@ -44,7 +26,6 @@ body { font-family: 'Khmer OS Siemreap', sans-serif; margin: 0; background: var(
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-/* ------------------------------------------- */
 
 /* Header & Stats */
 .main-header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 40px 20px; border-radius: 0 0 30px 30px; }
@@ -78,4 +59,20 @@ body { font-family: 'Khmer OS Siemreap', sans-serif; margin: 0; background: var(
 .nav-btn { flex: 1; border: none; background: none; color: #94a3b8; display: flex; flex-direction: column; align-items: center; gap: 4px; }
 .nav-btn.active { color: white; }
 
-
+/* រចនាប័ទ្មសម្រាប់ប្រអប់ម៉ោង និងកាលបរិច្ឆេទ */
+.datetime-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.datetime-badge i {
+    margin-right: 5px;
+    color: #e0e7ff;
+}
