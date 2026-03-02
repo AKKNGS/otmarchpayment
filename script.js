@@ -92,4 +92,26 @@ function handleSearch() {
 
 window.onload = loadAllData;
 
+// មុខងារបង្ហាញម៉ោង និងកាលបរិច្ឆេទ
+function updateDateTime() {
+    const now = new Date();
+    
+    // កំណត់ទម្រង់ថ្ងៃខែ និងម៉ោងជាភាសាខ្មែរ
+    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    
+    // បំប្លែងទៅជាអក្សរខ្មែរដោយស្វ័យប្រវត្តិ
+    const dateStr = now.toLocaleDateString('km-KH', dateOptions);
+    const timeStr = now.toLocaleTimeString('km-KH', timeOptions);
+    
+    const displayElement = document.getElementById('datetime-display');
+    if (displayElement) {
+        displayElement.innerHTML = `<i class="far fa-calendar-alt"></i> ${dateStr} &nbsp;|&nbsp; <i class="far fa-clock"></i> ${timeStr}`;
+    }
+}
+
+// ហៅមុខងារនេះឱ្យដើររៀងរាល់ ១វិនាទី (1000ms)
+setInterval(updateDateTime, 1000);
+// ហៅវាឱ្យបង្ហាញភ្លាមៗពេលបើកកម្មវិធី
+updateDateTime();
 
